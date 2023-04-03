@@ -1,70 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
-## Available Scripts
+## The challenge
 
-In the project directory, you can run:
+Your challenge is to build out this landing page and get it looking as close to the design as possible.
 
-### `npm start`
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Your users should be able to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Where to find everything
 
-### `npm run build`
+Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You will find all the required assets in the `/images` folder. The assets are already optimized.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Building your project
 
-### `npm run eject`
+Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tips
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Focus on practicing naming.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Focus on using the proper HTML tags.
 
-## Learn More
+Validate your code through https://validator.w3.org/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Repeat exercise task over and over and over again until you master it.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How you can make it harder
 
-### Code Splitting
+Introduce SCSS or SASS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Introduce CSS animations
 
-### Analyzing the Bundle Size
+Introduce basic JS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Set an hour timer, code for 4/5 hours and see how far you get.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Have fun building!** 🚀

@@ -1,0 +1,59 @@
+.Navbar_Container{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../images/bg-pattern-intro-desktop.svg'), linear-gradient(145deg, rgb(202, 137, 114), rgb(245, 54, 76), rgb(245, 54, 76));
+    
+}
+
+.Navbar_Header{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.Navbar_Header_Logo{
+
+}
+
+.Navbar_Header_Select{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    align-items: center;
+}
+
+.Navbar_Select{
+    color: whitesmoke;
+}
+
+.Navbar_Select:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+}
+
+.Select_List {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+    padding-top: 2%;
+    min-width: 150px;
+    position: absolute;
+    display: none;
+}
+
+.Select_List li:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.Navbar_Select:hover > .Select_List{
+    display: block;
+}
