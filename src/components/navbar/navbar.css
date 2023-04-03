@@ -1,52 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
 .Navbar_Container{
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../../images/bg-pattern-intro-desktop.svg'), linear-gradient(145deg, rgb(202, 137, 114), rgb(245, 54, 76), rgb(245, 54, 76));
-    
+    background-position: 28% 51%;
+    background-image: url('../../images/bg-pattern-intro-desktop.svg'), 
+        linear-gradient(
+            145deg, hsl(13, 100%, 72%), 
+            hsl(13, 100%, 72%), 
+            hsl(353, 100%, 62%),
+            hsl(353, 100%, 62%),
+            hsl(353, 100%, 62%),
+            hsl(353, 100%, 62%));
+    border-bottom-left-radius: 50px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .Navbar_Header{
     display: flex;
-    padding-left: 10%;
+    justify-content: space-around;
     padding-top: 2%;
+    flex-wrap: wrap;
+}
+
+.Navbar_Header_Menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .Navbar_Header_Logo{
-
+    height: 60%;
 }
 
 .Navbar_Header_Select{
     display: flex;
     justify-content: space-evenly;
-    width: 30%;
-    align-items: center;
 }
 
 .Navbar_Select{
-    color: whitesmoke;
+    color: hsl(0, 0%, 100%);
 }
 
 .Navbar_Select:hover{
     cursor: pointer;
     text-decoration: underline;
+    /* font-weight: bold; */
 }
 
 ul{
     list-style: none;
 }
 
-.Select_List {
-    background-color: whitesmoke;
-    color: black;
+.Select_List{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(208, 49%, 24%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding-left: 0%;
-    padding-top: 2%;
-    min-width: 150px;
+    text-align: start;
+    padding-top: 1%;
+    /* min-width: 150px; */
+    /* position: absolute;
+    display: none; */
+}
+
+.Navbar_Select ul {
     position: absolute;
     display: none;
+    min-width: 150px;
 }
 
 .Select_List li:hover{
@@ -54,6 +74,77 @@ ul{
     cursor: pointer;
 }
 
-.Navbar_Select:hover > .Select_List{
+.Navbar_Select:hover > ul{
     display: block;
+}
+
+.Navbar_Buttons{
+    display: flex;
+    align-items: center;
+}
+
+.Navbar_Button{
+    padding: 5%;
+    width: 80px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.Navbar_Button:hover{
+    background-color: hsl(355, 100%, 74%);
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.Navbar_body{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar_body_title, .Navbar_body_subtitle{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.Navbar_body_title{
+    font-weight: 600;
+    font-size: 47px;
+}
+
+.Navbar_body_subtitle{
+    font-weight: 300;
+    padding-bottom: 2%;
+}
+
+.Navbar_body_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.Body_Button_One, .Body_Button_Two{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 110px;
+    padding: 1%;
+}
+
+.Body_Button_One{
+    margin-right: 2%;
+}
+
+.Body_Button_One:hover{
+    background-color: hsl(355, 100%, 74%);
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.Body_Button_Two:hover{
+    background-color: hsl(0, 0%, 100%);
+    color:rgb(245, 54, 76);
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bolder;
 }

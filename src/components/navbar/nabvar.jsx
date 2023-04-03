@@ -4,34 +4,47 @@ import './navbar.css'
 
 const Navbar = () => {
     
-    
-    
     return(
         <div className="Navbar_Container">
+            
             <div className="Navbar_Header">
-                <img className="Navbar_Header_Logo" src={Logo} alt='Blogr Logo'/>
-                <div className="Navbar_Header_Select">
-                    <div disabled className="Navbar_Select" defaultValue='Product'>
-                        Product
-                    </div>
-                    <div disabled className="Navbar_Select" defaultValue='Company'>
-                        Company
-                    </div>
-                    <div className="Navbar_Select" defaultValue='Connect'>
-                        Connect
-                        <ul className="Select_List">
-                            <li>Contact</li><br/>
-                            <li>Newsletter</li><br/>
-                            <li>LinkedIn</li><br/>
+                
+                <div className="Navbar_Header_Menu">
+                    <img className="Navbar_Header_Logo" src={Logo} alt='Blogr Logo'/>
+                    
+                    <div className="Navbar_Header_Select">
+
+                        <ul className="Navbar_Select">
+                            <li>Product</li>
+                        </ul>
+
+                        <ul className="Navbar_Select">
+                            <li>Company</li>
+                        </ul>
+
+                        <ul className="Navbar_Select">
+                            <li>Connect</li>
+                                <ul className="Select_List">
+                                    <li>Contact</li><br/>
+                                    <li>Newsletter</li><br/>
+                                    <li>LinkedIn</li><br/>
+                                </ul>
                         </ul>
                     </div>
                 </div>
-                <div>
 
+                <div className="Navbar_Buttons">
+                    <div className="Navbar_Button">Login</div>
+                    <div className="Navbar_Button">Sing Up</div>
                 </div>
             </div>
             <div className="Navbar_body">
-
+                <b className="Navbar_body_title">A modern publishing platform</b>
+                <b className="Navbar_body_subtitle">Grow your audience and build your online brand</b>
+                <div className="Navbar_body_buttons">
+                    <div className="Body_Button_One">Start for Free</div>
+                    <div className="Body_Button_Two">Learn More</div>
+                </div>
             </div>
         </div>
     )
