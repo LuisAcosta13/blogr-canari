@@ -264,6 +264,7 @@ ul{
         overflow: hidden;
         animation: grow 250ms ease-in-out;
     }
+
     .Navbar_Menu_mobile{
         z-index: 10;
         position: relative;
@@ -299,7 +300,7 @@ ul{
         display: block;
     }
     .Navbar_ul_mobile li:hover > img{
-        transform: rotate(180deg);
+        transform: none;
     }
     
     .Select_List_mobile > li:hover{

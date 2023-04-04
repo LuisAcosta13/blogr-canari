@@ -9,14 +9,27 @@ import './navbar.css'
 const Navbar = () => {
 
     function toggleMenu(id) {
-        const menu = document.getElementById(id);
-        const otherMenus = document.querySelectorAll('.Select_List_mobile:not(#'+id+')');
-      
+        const menu = document.getElementById(id)
+        const otherMenus = document.querySelectorAll('.Select_List_mobile:not(#'+id+')')
+
         otherMenus.forEach(menu => {
-          menu.classList.remove('display');
+          menu.classList.remove('display')
+
+          const items = document.querySelectorAll('.Arrow:not(#arrow_' + id + ')')
+          items.forEach(item => item.style.transform = 'rotate(0deg)')
+
         });
 
-        menu.classList.toggle('display');
+        menu.classList.toggle('display')
+        
+        let selectedArrowEffect = document.getElementById('arrow_' + id).style.transform 
+
+        if(selectedArrowEffect !== 'rotate(180deg)'){
+            document.getElementById('arrow_' + id).style.transform  = 'rotate(180deg)'
+        } else {
+            document.getElementById('arrow_' + id).style.transform  = 'rotate(0deg)'
+        }
+        
     }
 
     return(
@@ -41,7 +54,7 @@ const Navbar = () => {
                                 onClick={()=> toggleMenu('menu1')} 
                                 className="Navbar_Item_Menu_mobile">
                                     
-                                    Product <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
+                                    Product <img id="arrow_menu1" className='Arrow' src={DarkArrow} alt="Arrow"/> 
 
                                     <div id='menu1' className="Select_List_mobile">
                                             <li>Overview</li><br/>
@@ -56,7 +69,7 @@ const Navbar = () => {
                                 onClick={()=> toggleMenu('menu2')} 
                                 className="Navbar_Item_Menu_mobile">
                                     
-                                    Company <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
+                                    Company <img id="arrow_menu2" className='Arrow' src={DarkArrow} alt="Arrow"/> 
 
                                     <div id='menu2' className="Select_List_mobile">
                                             <li>About</li><br/>
@@ -70,7 +83,7 @@ const Navbar = () => {
                                 onClick={()=> toggleMenu('menu3')} 
                                 className="Navbar_Item_Menu_mobile">
                                     
-                                    Connect <img className='Arrow' src={DarkArrow} alt="Arrow"/>
+                                    Connect <img id="arrow_menu3" className='Arrow' src={DarkArrow} alt="Arrow"/>
 
                                     <div id='menu3' className="Select_List_mobile">
                                         <li>Contact</li><br/>
