@@ -11,7 +11,7 @@
             hsl(353, 100%, 62%),
             hsl(353, 100%, 62%),
             hsl(353, 100%, 62%));
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 100px;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -24,12 +24,24 @@
 
 .Navbar_Header_Menu{
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
 }
 
 .Navbar_Header_Logo{
     height: 60%;
+}
+
+.Navbar_Menu_Icon_mobile{
+    display: none;
+}
+
+.Navbar_Close_Icon_mobile{
+    display: none;
+}
+
+.Navbar_Menu_mobile{
+    display: none;
 }
 
 .Navbar_Header_Select{
@@ -79,6 +91,10 @@ ul{
     display: block;
 }
 
+.Navbar_Select:hover > li > img{
+    transform: rotate(180deg);
+}
+
 .Navbar_Buttons{
     display: flex;
     align-items: center;
@@ -116,7 +132,7 @@ ul{
 
 .Navbar_body_subtitle{
     font-weight: 300;
-    padding-bottom: 2%;
+    padding: 5%;
 }
 
 .Navbar_body_buttons{
@@ -124,22 +140,32 @@ ul{
     justify-content: center;
 }
 
-.Body_Button_One, .Body_Button_Two{
-    color: hsl(0, 0%, 100%);
+.Body_Button_One{
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(245, 54, 76);
+    font-weight: bold;
     text-align: center;
     width: 110px;
-    padding: 1%;
-}
-
-.Body_Button_One{
+    padding: 2%;
     margin-right: 2%;
+    border-radius: 100px;
 }
 
 .Body_Button_One:hover{
+    color: hsl(0, 0%, 100%);
     background-color: hsl(355, 100%, 74%);
     border-radius: 100px;
     cursor: pointer;
     font-weight: bolder;
+}
+
+.Body_Button_Two{
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 100px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 110px;
+    padding: 2%;
 }
 
 .Body_Button_Two:hover{
@@ -148,4 +174,103 @@ ul{
     border-radius: 100px;
     cursor: pointer;
     font-weight: bolder;
+}
+
+@media (max-width: 576px){
+    .Navbar_Header{
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+        flex-wrap: wrap;
+    }
+    .Navbar_Header_Logo{
+        padding-left: 5%;
+        padding-top: 5%;
+        height: 60%;
+        margin-right: 100%;
+    }
+    .Navbar_Menu_Icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20%;
+    }
+    .Navbar_Menu_Icon_mobile{
+        display: block;
+        height: 60%;
+        padding-top: 5%;
+    }
+    .Navbar_Header_Select{
+        display: none;
+    }
+    .Navbar_Buttons{
+        display: none;
+    }
+    
+    .Navbar_ul_mobile ul{
+        position: absolute;
+        display: none;
+        min-width: 150px;
+    }
+    .Navbar_ul_mobile:hover > ul {
+        display: block;
+    }
+    .Navbar_Menu_mobile{
+        z-index: 10;
+        position: relative;
+        left: 10%;
+        right: 10%;
+        top: 15%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        color: hsl(208, 49%, 24%);
+        font-size: 18px;
+        padding: 5%;
+        box-shadow: 0px 0.1px 5px rgba(41, 41, 41, 0.833);
+    }
+    .Navbar_Item_Menu_mobile{
+        padding: 5%;
+    }
+    .Select_List_mobile{
+        display: none;
+        background-color: hsl(0, 6%, 93%);
+        border-radius: 10px;
+        padding-top: 5%;
+    }
+    .Navbar_ul_mobile li:hover > div {
+        display: block;
+        color:hsl(207, 13%, 34%);
+    }
+
+    .Navbar_ul_mobile li:hover > img{
+        transform: rotate(180deg);
+    }
+    
+    .Select_List_mobile > li:hover{
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    .Navbar_buttons_mobile{
+        border-top: solid 1px gray;
+        margin-top: 10%;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Singup_mobile{
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+        margin-top: 10%;
+        padding: 5%;
+        width: 40%;
+        border-radius: 100px;
+        background-image: linear-gradient(145deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+    .Navbar_ul_mobile:hover > li > .Navbar_Close_Icon_mobile{
+        display: block;
+    }
+    .Navbar_ul_mobile:hover > li > .Navbar_Menu_Icon_mobile{
+        display: none;
+    }
 }
