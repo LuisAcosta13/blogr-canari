@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
 .Navbar_Container{
+    background-repeat: no-repeat;
     background-position: 28% 51%;
     background-image: url('../../images/bg-pattern-intro-desktop.svg'), 
         linear-gradient(

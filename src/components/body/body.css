@@ -1,29 +1,49 @@
 .Body_container{
+    /* background-size: 700px;
     background-image: url('../../images/illustration-editor-desktop.svg');
-    background-size: 55%;
     background-repeat: no-repeat;
-    background-position: 135% 600%;
+    background-position: 600px 50px; */
     font-family: 'Overpass', sans-serif;
-    min-height: 100vh;
-    padding-top: 8%;
 }
 
-/* .Body_subcontainer_one{
+.Body_subcontainer_one{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
-} */
+}
+
+.Body_ImageOne_container{
+    overflow: hidden;
+    position: relative;
+    bottom: 180px;
+    width: 700px;
+    padding-left: 5%;
+}
+
+.Body_Image_One{
+    height: 800px;
+}
+
+
+.Text_Container{
+    display: flex;
+    flex-direction: column;
+}
 
 .Body_Main_Title{
     font-size: 35px;
     font-weight: 600;
     color: hsl(208, 49%, 24%);
+    padding-top: 8%;
     padding-bottom: 5%;
 }
 
 .Body_Section_One, .Body_Section_Two{
-    width: 50%;
-    padding-left: 10%;
+    max-width: 700px;
+    padding-left: 20%;
     text-align: start;
+    padding-bottom: 5%;
+    padding-top: 2.5%;
 }
 
 .Body_Title{
@@ -33,7 +53,9 @@
 }
 
 .Body_Text{
-    width: 80%;
+    width: 105%;
     color: hsl(207, 13%, 34%);
     font-weight: 300;
+    line-height: 150%;
 }
+
