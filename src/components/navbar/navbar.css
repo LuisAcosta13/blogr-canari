@@ -89,6 +89,8 @@ ul{
 
 .Navbar_Select:hover > ul{
     display: block;
+    overflow: hidden;
+    animation: grow 250ms ease-in-out;
 }
 
 .Navbar_Select:hover > li > img{
@@ -251,7 +253,8 @@ ul{
     }
     .Navbar_ul_mobile:hover > ul {
         display: block;
-        transition: all 250ms ease-out;
+        overflow: hidden;
+        animation: grow 250ms ease-in-out;
     }
     .Navbar_Menu_mobile{
         z-index: 10;
@@ -310,5 +313,14 @@ ul{
     }
     .Navbar_ul_mobile:hover > li > .Navbar_Menu_Icon_mobile{
         display: none;
+    }
+}
+
+@keyframes grow {
+    from{
+        max-height: 0%;
+    }
+    to{
+        max-height: 100%;
     }
 }
