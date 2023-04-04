@@ -1,4 +1,4 @@
-.Body_container{
+.Body{
     /* background-size: 700px;
     background-image: url('../../images/illustration-editor-desktop.svg');
     background-repeat: no-repeat;
@@ -6,7 +6,7 @@
     font-family: 'Overpass', sans-serif;
 }
 
-.Body_subcontainer_one{
+.Body_one{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -41,7 +41,6 @@
 .Body_Section_One, .Body_Section_Two{
     max-width: 700px;
     padding-left: 20%;
-    text-align: start;
     padding-bottom: 5%;
     padding-top: 2.5%;
 }
@@ -50,6 +49,7 @@
     color: hsl(208, 49%, 24%);
     font-weight: 600;
     font-size: 20px;
+    text-align: start;
 }
 
 .Body_Text{
@@ -57,5 +57,135 @@
     color: hsl(207, 13%, 34%);
     font-weight: 300;
     line-height: 150%;
+    text-align: start;
 }
 
+.Body_two_subcontainer{
+    background-image: url('../../images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: -210px -530px;
+    background-color: hsl(237, 17%, 21%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 430px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.Phones_img{
+    z-index: 1;
+    padding-right: 50%;
+    position: relative;
+    bottom: 50px;
+}
+
+.Body_two_Section{
+    padding-left: 10%;
+    position: relative;
+    bottom: 80px;
+}
+
+.Body_two_Title{
+    font-size: 30px;
+    text-align: start;
+}
+
+.Body_two_Text{
+    text-align: start;
+    line-height: 150%;
+    width: 500px;
+}
+
+@media (max-width: 1200px) {
+    .Body_Main_Title{
+        font-size: 30px;
+        font-weight: 600;
+        color: hsl(208, 49%, 24%);
+        padding-top: 8%;
+        padding-bottom: 5%;
+    }
+    .Body_one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Body_ImageOne_container{
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        bottom: 0;
+        width: 100%;
+        padding-left: 0%;
+    }
+    .Body_Image_One{
+        height: 300px;
+    }
+    .Body_Section_One, .Body_Section_Two{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-bottom: 5%;
+        padding-top: 2.5%;
+    }
+    .Body_two_Title{
+        font-size: 30px;
+        text-align: start;
+    }
+    .Body_Text{
+        width: 80%;
+        color: hsl(207, 13%, 34%);
+        font-weight: 300;
+        line-height: 150%;
+        text-align: center;
+    }
+    .Body_two_subcontainer{
+        background-image: url('../../images/bg-pattern-circles.svg');
+        background-repeat: no-repeat;
+        background-size: 850px;
+        background-position: 50% 250%;
+        background-color: hsl(237, 17%, 21%);
+        color: hsl(0, 0%, 100%);
+        font-family: 'Overpass', sans-serif;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-height: 430px;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+    
+    .Body_two{
+        padding-top: 150px;
+    }
+    .Body_two_subcontainer{  
+        max-height: 1000px;
+    }
+    .Phones_img{
+        z-index: 1;
+        width: 90%;
+        padding-right: 0%;
+        position: relative;
+        bottom: 150px;
+    }
+    .Body_two_Section{
+        padding-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Body_two_Title{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .Body_two_Text{
+        text-align: center;
+        line-height: 150%;
+        width: 60%;
+    }
+}

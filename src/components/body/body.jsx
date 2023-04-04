@@ -1,14 +1,15 @@
 import React from "react";
 import './body.css'
-import Image_One from '../../images/illustration-editor-desktop.svg'
+import Desktop_Img from '../../images/illustration-editor-desktop.svg'
+import Phones_img from '../../images/illustration-phones.svg'
 
 const Body = () => {
     return(
-        <div className="Body_container">
+        <div className="Body">
             <p className="Body_Main_Title">Designed for the future</p>
-            <div className="Body_subcontainer_one">
+            <div className="Body_one">
                 <div className="Body_ImageOne_container">
-                    <img className='Body_Image_One' src={Image_One} alt='Desktop'/>
+                    <img className='Body_Image_One' src={Desktop_Img} alt='Desktop'/>
                 </div>    
                 <div className="Text_Container">
                     <div className="Body_Section_One">
@@ -30,6 +31,26 @@ const Body = () => {
                             through posts. Increase the usability of your blog by 
                             adding customized categories, sections, format, or follow. 
                             With this functionality, you're in full control.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="Body_two">
+                <div className="Body_two_subcontainer">
+                    <div className="Body_two_Images">
+                        <img className="Phones_img" src={Phones_img} alt='Two Phones'/>
+                       
+                    </div>
+                    <div className='Body_two_Section'>
+                        <p className="Body_two_Title">
+                            State of the Art Infrastructure
+                        </p>
+                        <p className="Body_two_Text">
+                            With reliability and speed in mind, worldwide data 
+                            centers provide the backbone for ultra-fast connectivity.
+                            This ensures your site will load instantly, no matter where 
+                            your readers are, keeping your site competitive.
                         </p>
                     </div>
                 </div>
