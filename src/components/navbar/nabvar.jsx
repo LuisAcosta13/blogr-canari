@@ -8,6 +8,17 @@ import './navbar.css'
 
 const Navbar = () => {
 
+    function toggleMenu(id) {
+        const menu = document.getElementById(id);
+        const otherMenus = document.querySelectorAll('.Select_List_mobile:not(#'+id+')');
+      
+        otherMenus.forEach(menu => {
+          menu.classList.remove('display');
+        });
+
+        menu.classList.toggle('display');
+    }
+
     return(
         <div className="Navbar_Container">
             
@@ -26,8 +37,14 @@ const Navbar = () => {
                             
                             
                             <ul className="Navbar_Menu_mobile">
-                                <li className="Navbar_Item_Menu_mobile">Product <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
-                                    <div className="Select_List_mobile">
+                                <li 
+                                onClick={()=> toggleMenu('menu1')} 
+                                className="Navbar_Item_Menu_mobile">
+                                    
+                                    Product 
+                                    <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
+
+                                    <div id='menu1' className="Select_List_mobile">
                                             <li>Overview</li><br/>
                                             <li>Pricing</li><br/>
                                             <li>Marketplace</li><br/>
@@ -36,8 +53,14 @@ const Navbar = () => {
                                     </div>
                                 </li>
                                 
-                                <li className="Navbar_Item_Menu_mobile">Company <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
-                                    <div className="Select_List_mobile">
+                                <li 
+                                onClick={()=> toggleMenu('menu2')} 
+                                className="Navbar_Item_Menu_mobile">
+                                    
+                                    Company 
+                                    <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
+
+                                    <div id='menu2' className="Select_List_mobile">
                                             <li>About</li><br/>
                                             <li>Team</li><br/>
                                             <li>Blog</li><br/>
@@ -45,13 +68,20 @@ const Navbar = () => {
                                     </div>
                                 </li>
 
-                                <li className="Navbar_Item_Menu_mobile">Connect <img className='Arrow' src={DarkArrow} alt="Arrow"/>
-                                    <div className="Select_List_mobile">
+                                <li 
+                                onClick={()=> toggleMenu('menu3')} 
+                                className="Navbar_Item_Menu_mobile">
+                                    
+                                    Connect 
+                                    <img className='Arrow' src={DarkArrow} alt="Arrow"/>
+
+                                    <div id='menu3' className="Select_List_mobile">
                                         <li>Contact</li><br/>
                                         <li>Newsletter</li><br/>
                                         <li>LinkedIn</li><br/>
                                     </div>
                                 </li>
+
                                 <div className="Navbar_buttons_mobile">
                                     <div className="Login_mobile">Login</div>
                                     <div className="Singup_mobile">Sing Up</div> 
@@ -62,28 +92,43 @@ const Navbar = () => {
                     <div className="Navbar_Header_Select">
 
                         <ul className="Navbar_Select">
-                            <li>Product <img className='Arrow' src={Arrow} alt="Arrow"/></li> 
+
+                            <li>
+                                Product 
+                                <img className='Arrow' src={Arrow} alt="Arrow"/>
+                            </li> 
+
                             <ul className="Select_List">
-                                    <li>Overview</li><br/>
-                                    <li>Pricing</li><br/>
-                                    <li>Marketplace</li><br/>
-                                    <li>Features</li><br/>
-                                    <li>Integrations</li><br/>
-                                </ul>
+                                <li>Overview</li><br/>
+                                <li>Pricing</li><br/>
+                                <li>Marketplace</li><br/>
+                                <li>Features</li><br/>
+                                <li>Integrations</li><br/>
+                            </ul>
                         </ul>
 
                         <ul className="Navbar_Select">
-                            <li>Company <img className='Arrow' src={Arrow} alt="Arrow"/></li> 
+
+                            <li>
+                                Company 
+                                <img className='Arrow' src={Arrow} alt="Arrow"/>
+                            </li> 
+
                             <ul className="Select_List">
-                                    <li>About</li><br/>
-                                    <li>Team</li><br/>
-                                    <li>Blog</li><br/>
-                                    <li>Careers</li><br/>
-                                </ul>
+                                <li>About</li><br/>
+                                <li>Team</li><br/>
+                                <li>Blog</li><br/>
+                                <li>Careers</li><br/>
+                            </ul>
                         </ul>
 
                         <ul className="Navbar_Select">
-                            <li>Connect <img className='Arrow' src={Arrow} alt="Arrow"/></li> 
+                            
+                            <li>
+                                Connect 
+                                <img className='Arrow' src={Arrow} alt="Arrow"/>
+                            </li> 
+
                             <ul className="Select_List">
                                 <li>Contact</li><br/>
                                 <li>Newsletter</li><br/>

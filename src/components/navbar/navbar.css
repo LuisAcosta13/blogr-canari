@@ -32,17 +32,19 @@
     height: 60%;
 }
 
-.Navbar_Menu_Icon_mobile{
-    display: none;
-}
+/* mobile version items */
+    .Navbar_Menu_Icon_mobile{
+        display: none;
+    }
 
-.Navbar_Close_Icon_mobile{
-    display: none;
-}
+    .Navbar_Close_Icon_mobile{
+        display: none;
+    }
 
-.Navbar_Menu_mobile{
-    display: none;
-}
+    .Navbar_Menu_mobile{
+        display: none;
+    }
+/* mobile version items */
 
 .Navbar_Header_Select{
     display: flex;
@@ -76,6 +78,8 @@ ul{
     display: none; */
 }
 
+
+/* manage menus */
 .Navbar_Select ul {
     position: absolute;
     display: none;
@@ -121,6 +125,7 @@ ul{
     font-weight: bolder;
     border-radius: 100px;
     cursor: pointer;
+    transition: .2s;
 }
 
 .Navbar_Button:hover{
@@ -128,6 +133,7 @@ ul{
     border-radius: 100px;
     cursor: pointer;
     font-weight: bolder;
+    transition: .2s;
 }
 
 .Navbar_body{
@@ -173,6 +179,7 @@ ul{
     border-radius: 100px;
     cursor: pointer;
     font-weight: bolder;
+    transition: .2s;
 }
 
 .Body_Button_Two{
@@ -190,6 +197,7 @@ ul{
     border-radius: 100px;
     cursor: pointer;
     font-weight: bolder;
+    transition: .2s;
 }
 
 @media (max-width: 576px){
@@ -272,17 +280,24 @@ ul{
     .Navbar_Item_Menu_mobile{
         padding: 5%;
     }
+
+    /* manage menus */
     .Select_List_mobile{
         display: none;
         background-color: hsl(0, 6%, 93%);
         border-radius: 10px;
         padding-top: 5%;
     }
+
     .Navbar_ul_mobile li:hover > div {
-        display: block;
+        /* display: block; */
         color:hsl(207, 13%, 34%);
     }
 
+    .Select_List_mobile.display{
+        animation: grow 250ms ease-in-out;
+        display: block;
+    }
     .Navbar_ul_mobile li:hover > img{
         transform: rotate(180deg);
     }
@@ -291,6 +306,7 @@ ul{
         cursor: pointer;
         font-weight: bolder;
     }
+
     .Navbar_buttons_mobile{
         border-top: solid 1px gray;
         margin-top: 10%;
@@ -308,6 +324,8 @@ ul{
         border-radius: 100px;
         background-image: linear-gradient(145deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     }
+
+    /* hide icons */
     .Navbar_ul_mobile:hover > li > .Navbar_Close_Icon_mobile{
         display: block;
     }
