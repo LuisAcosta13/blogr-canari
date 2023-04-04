@@ -41,8 +41,7 @@ const Navbar = () => {
                                 onClick={()=> toggleMenu('menu1')} 
                                 className="Navbar_Item_Menu_mobile">
                                     
-                                    Product 
-                                    <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
+                                    Product <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
 
                                     <div id='menu1' className="Select_List_mobile">
                                             <li>Overview</li><br/>
@@ -57,8 +56,7 @@ const Navbar = () => {
                                 onClick={()=> toggleMenu('menu2')} 
                                 className="Navbar_Item_Menu_mobile">
                                     
-                                    Company 
-                                    <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
+                                    Company <img className='Arrow' src={DarkArrow} alt="Arrow"/> 
 
                                     <div id='menu2' className="Select_List_mobile">
                                             <li>About</li><br/>
@@ -72,8 +70,7 @@ const Navbar = () => {
                                 onClick={()=> toggleMenu('menu3')} 
                                 className="Navbar_Item_Menu_mobile">
                                     
-                                    Connect 
-                                    <img className='Arrow' src={DarkArrow} alt="Arrow"/>
+                                    Connect <img className='Arrow' src={DarkArrow} alt="Arrow"/>
 
                                     <div id='menu3' className="Select_List_mobile">
                                         <li>Contact</li><br/>
@@ -94,8 +91,7 @@ const Navbar = () => {
                         <ul className="Navbar_Select">
 
                             <li>
-                                Product 
-                                <img className='Arrow' src={Arrow} alt="Arrow"/>
+                                Product <img className='Arrow' src={Arrow} alt="Arrow"/>
                             </li> 
 
                             <ul className="Select_List">
@@ -110,8 +106,7 @@ const Navbar = () => {
                         <ul className="Navbar_Select">
 
                             <li>
-                                Company 
-                                <img className='Arrow' src={Arrow} alt="Arrow"/>
+                                Company <img className='Arrow' src={Arrow} alt="Arrow"/>
                             </li> 
 
                             <ul className="Select_List">
@@ -125,8 +120,7 @@ const Navbar = () => {
                         <ul className="Navbar_Select">
                             
                             <li>
-                                Connect 
-                                <img className='Arrow' src={Arrow} alt="Arrow"/>
+                                Connect <img className='Arrow' src={Arrow} alt="Arrow"/>
                             </li> 
 
                             <ul className="Select_List">
