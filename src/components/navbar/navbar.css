@@ -100,11 +100,19 @@ ul{
     align-items: center;
 }
 
-.Navbar_Button{
+.Navbar_Button, .Navbar_Button_Singup{
     padding: 5%;
     width: 80px;
     color: hsl(0, 0%, 100%);
     text-align: center;
+}
+
+.Navbar_Button_Singup:hover{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(353, 100%, 62%);
+    font-weight: bolder;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
 .Navbar_Button:hover{
@@ -187,7 +195,7 @@ ul{
         padding-left: 5%;
         padding-top: 5%;
         height: 60%;
-        margin-right: 100%;
+        margin-right: 80%;
     }
     .Navbar_Menu_Icons{
         display: flex;

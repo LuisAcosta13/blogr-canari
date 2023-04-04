@@ -95,7 +95,7 @@ const Navbar = () => {
 
                 <div className="Navbar_Buttons">
                     <div className="Navbar_Button">Login</div>
-                    <div className="Navbar_Button">Sing Up</div>
+                    <div className="Navbar_Button_Singup">Sing Up</div>
                 </div>
             </div>
             <div className="Navbar_body">
