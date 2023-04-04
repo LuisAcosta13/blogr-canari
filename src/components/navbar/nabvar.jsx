@@ -16,19 +16,32 @@ const Navbar = () => {
 
                         <ul className="Navbar_Select">
                             <li>Product</li>
+                            <ul className="Select_List">
+                                    <li>Overview</li><br/>
+                                    <li>Pricing</li><br/>
+                                    <li>Marketplace</li><br/>
+                                    <li>Features</li><br/>
+                                    <li>Integrations</li><br/>
+                                </ul>
                         </ul>
 
                         <ul className="Navbar_Select">
                             <li>Company</li>
+                            <ul className="Select_List">
+                                    <li>About</li><br/>
+                                    <li>Team</li><br/>
+                                    <li>Blog</li><br/>
+                                    <li>Careers</li><br/>
+                                </ul>
                         </ul>
 
                         <ul className="Navbar_Select">
                             <li>Connect</li>
-                                <ul className="Select_List">
-                                    <li>Contact</li><br/>
-                                    <li>Newsletter</li><br/>
-                                    <li>LinkedIn</li><br/>
-                                </ul>
+                            <ul className="Select_List">
+                                <li>Contact</li><br/>
+                                <li>Newsletter</li><br/>
+                                <li>LinkedIn</li><br/>
+                            </ul>
                         </ul>
                     </div>
                 </div>
