@@ -185,11 +185,22 @@ ul{
 }
 
 @media (max-width: 576px){
+    
+    .Navbar_Container{
+        background-size: 350%;
+        background-position: 38% 30%;
+    }
+    .Navbar_body{
+        padding-top: 40%;
+        padding-bottom: 20%;
+    }
+
     .Navbar_Header{
         display: flex;
         justify-content: center;
         padding-top: 2%;
         flex-wrap: wrap;
+        
     }
     .Navbar_Header_Logo{
         padding-left: 5%;
@@ -211,10 +222,22 @@ ul{
     .Navbar_Header_Select{
         display: none;
     }
+    .Navbar_body_title{
+        font-size: 33px;
+    }
+    .Navbar_body_subtitle{
+        padding-bottom: 20%;
+    }
+    .Navbar_body_buttons{
+        padding-bottom: 30%;
+    }
     .Navbar_Buttons{
         display: none;
     }
-    
+    .Body_Button_One, .Body_Button_Two{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
     .Navbar_ul_mobile ul{
         position: absolute;
         display: none;
@@ -222,6 +245,7 @@ ul{
     }
     .Navbar_ul_mobile:hover > ul {
         display: block;
+        transition: all 250ms ease-out;
     }
     .Navbar_Menu_mobile{
         z-index: 10;
