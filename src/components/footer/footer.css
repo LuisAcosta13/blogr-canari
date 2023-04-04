@@ -1,0 +1,52 @@
+.Footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 100px;
+    margin-top: 5%;
+    padding: 5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Footer_Logo{
+    padding-bottom: 50%;
+}
+
+.Footer_Options{
+    color: hsl(0, 0%, 100%);
+    text-align: start;
+}
+
+.Footer_Title{
+    padding-bottom: 35%;
+    font-weight: bold;
+}
+
+.Footer_List{
+    padding-bottom: 35%;
+}
+
+.Footer_Item{
+    padding-bottom: 5%;
+}
+
+.Footer_Item:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .Footer_Logo{
+        padding-top: 50%;
+    }
+    .Footer_Options{
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+    }
+}
