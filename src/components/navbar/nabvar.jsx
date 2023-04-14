@@ -94,7 +94,7 @@ const Navbar = () => {
 
                                 <div className="Navbar_buttons_mobile">
                                     <div className="Login_mobile">Login</div>
-                                    <div className="Singup_mobile">Sing Up</div> 
+                                    <div className="Singup_mobile">Sign Up</div> 
                                 </div>
                             </ul>
                         </ul>
